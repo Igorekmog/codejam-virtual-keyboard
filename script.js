@@ -43,22 +43,26 @@ const special = ['Backspace', 'Tab', 'Delete', 'CapsLock', 'Enter', 'ShiftLeft',
   
 
   // Create main elements
-        const wrapper = document.createElement("div");
-        const main = document.createElement("div");
-        const keysContainer = document.createElement("div");
-        const inputBlock = document.createElement("textarea");
+    const about = document.createElement("p");
+    const wrapper = document.createElement("div");
+    const main = document.createElement("div");
+    const keysContainer = document.createElement("div");
+    const inputBlock = document.createElement("textarea");
 
         // Setup main elements
-        inputBlock.classList.add("input-block");
-        main.classList.add("keyboard-container");
-        wrapper.classList.add("wrapper");
-        keysContainer.classList.add("keyboard__keys");
+    about.classList.add("about");
+    about.innerText = "To change language press CTRL + ALT on physical keyboard or Win on virtual keyboard. Created on OS Windows";    
+    inputBlock.classList.add("input-block");
+    main.classList.add("keyboard-container");
+    wrapper.classList.add("wrapper");
+    keysContainer.classList.add("keyboard__keys");
         // Add to DOM
         
-        main.appendChild(keysContainer);
-        wrapper.appendChild(inputBlock);
-        wrapper.appendChild(main);
-        document.body.appendChild(wrapper);
+    main.appendChild(keysContainer);
+    wrapper.appendChild(inputBlock);
+    wrapper.appendChild(main);
+    wrapper.appendChild(about);
+    document.body.appendChild(wrapper);
 
         const createButtons = (arr) => { 
             for(let i = 0; i < arr.length; i++) {

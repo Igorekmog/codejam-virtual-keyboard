@@ -5,6 +5,11 @@
     font-size: 16px;
 }
 
+.about {
+    text-align: center;
+    font-size: 18px;
+}
+
 .wrapper {
     width: 1020px;
     margin: 0 auto;

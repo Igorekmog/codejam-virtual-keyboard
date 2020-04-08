@@ -1,2 +1,2 @@
 # codejam-virtual-keyboard
-RSS Виртуальная клавиатура
+https://igorekmog.github.io/codejam-virtual-keyboard/

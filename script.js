@@ -100,6 +100,7 @@ const special = ['Backspace', 'Tab', 'Delete', 'CapsLock', 'Enter', 'ShiftLeft',
                 }
                 else if(code === "CapsLock") {
                     handleCapsLock();
+                    btn.classList.toggle('pressed');
                 }
                 else if(code === "ShiftLeft" || code === "ShiftRight") {
                     replaceKeyboard(localStorage.getItem('lang') === 'en' ? enShift : ruShift);
@@ -157,6 +158,7 @@ const special = ['Backspace', 'Tab', 'Delete', 'CapsLock', 'Enter', 'ShiftLeft',
                 }
                 else if(id === "CapsLock") {
                     handleCapsLock();
+                    btn.classList.toggle('pressed');
                 }
                 else if(id === 'ArrowLeft' || id === 'ArrowUp' || id === 'ArrowRight' || id === 'ArrowDown') {
                     printSymbols(id);
